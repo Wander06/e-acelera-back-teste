@@ -1,0 +1,23 @@
+{
+  "name": "e-acelera-backend",
+  "version": "1.0.0",
+  "description": "A backend repository for e-acelera project",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "npx tsx src/index.ts",
+    "dev": "nodemon src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "daniellemadrid",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemon": "^3.1.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "tsx": "^4.11.0",
+    "typescript": "^5.4.5"
+  }
+}
