@@ -19,7 +19,7 @@ async function main() {
     },
   });
 
-  console.log('Dados inseridos com sucesso!');
+  console.log('Dados inseridos com sucesso! ');
 }
 
 main()
