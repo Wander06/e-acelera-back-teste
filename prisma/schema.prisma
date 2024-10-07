@@ -26,3 +26,7 @@ enum ElementType {
   VIDEO
   EXERCICIO
 }
+
+model teste{
+    id          Int         @id @default(autoincrement())
+}
