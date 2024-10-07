@@ -13,16 +13,16 @@ model User {
   Progress Progress?
 }
 
-enum ElementType {
-  VIDEO
-  EXERCICIO
-}
-
 model Progress {
   id          Int         @id @default(autoincrement())
   itemId      String      @unique
   itemStatus  Boolean
   elementType ElementType
-  user        User        @relation(fields: [userId], references: [id])
   userId      Int         @unique
+  user        User        @relation(fields: [userId], references: [id])
+}
+
+enum ElementType {
+  VIDEO
+  EXERCICIO
 }
