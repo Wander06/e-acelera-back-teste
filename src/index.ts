@@ -1,7 +1,7 @@
 import express from 'express'
 
-const app = express()
-const port = process.env.PORT ?? 5002
+const app = express();
+const port = process.env.PORT ?? 5002;
 
 app.get('/', (req, res) => {
     res.send('Welcome to the homepage');
@@ -15,6 +15,4 @@ app.get('/login', (req, res) => {
     res.send('Login page');
 });
 
-app.listen(port, () => {
-    console.log(`Server is running on port ${port}`)
-})
+export default app;
